@@ -16,6 +16,12 @@
 		E3E3726529679D270008EF08 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E3726429679D270008EF08 /* HomeView.swift */; };
 		E3E372682967A4050008EF08 /* ShuffleBotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E372672967A4050008EF08 /* ShuffleBotModel.swift */; };
 		E3E3726A2967A56D0008EF08 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E372692967A56D0008EF08 /* MainView.swift */; };
+		E3E3726C29687AF00008EF08 /* NamePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E3726B29687AF00008EF08 /* NamePickerView.swift */; };
+		E3E3726E29687B010008EF08 /* TeamPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E3726D29687B010008EF08 /* TeamPickerView.swift */; };
+		E3E3727029687B0D0008EF08 /* YankeeSwapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E3726F29687B0D0008EF08 /* YankeeSwapView.swift */; };
+		E3E3727229687B1D0008EF08 /* FlipCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E3727129687B1D0008EF08 /* FlipCoinView.swift */; };
+		E3E3727429687B280008EF08 /* DecisionMakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E3727329687B280008EF08 /* DecisionMakerView.swift */; };
+		E3E3727629687B330008EF08 /* RollDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E3727529687B330008EF08 /* RollDiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,12 @@
 		E3E3726429679D270008EF08 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E3E372672967A4050008EF08 /* ShuffleBotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleBotModel.swift; sourceTree = "<group>"; };
 		E3E372692967A56D0008EF08 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E3E3726B29687AF00008EF08 /* NamePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePickerView.swift; sourceTree = "<group>"; };
+		E3E3726D29687B010008EF08 /* TeamPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPickerView.swift; sourceTree = "<group>"; };
+		E3E3726F29687B0D0008EF08 /* YankeeSwapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YankeeSwapView.swift; sourceTree = "<group>"; };
+		E3E3727129687B1D0008EF08 /* FlipCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCoinView.swift; sourceTree = "<group>"; };
+		E3E3727329687B280008EF08 /* DecisionMakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionMakerView.swift; sourceTree = "<group>"; };
+		E3E3727529687B330008EF08 /* RollDiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollDiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,12 @@
 				E3E37250296729140008EF08 /* ContentView.swift */,
 				E3E372692967A56D0008EF08 /* MainView.swift */,
 				E3E3726429679D270008EF08 /* HomeView.swift */,
+				E3E3726B29687AF00008EF08 /* NamePickerView.swift */,
+				E3E3726D29687B010008EF08 /* TeamPickerView.swift */,
+				E3E3726F29687B0D0008EF08 /* YankeeSwapView.swift */,
+				E3E3727129687B1D0008EF08 /* FlipCoinView.swift */,
+				E3E3727329687B280008EF08 /* DecisionMakerView.swift */,
+				E3E3727529687B330008EF08 /* RollDiceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,12 +202,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E3727629687B330008EF08 /* RollDiceView.swift in Sources */,
 				E3E37258296729150008EF08 /* Persistence.swift in Sources */,
+				E3E3726C29687AF00008EF08 /* NamePickerView.swift in Sources */,
 				E3E3726A2967A56D0008EF08 /* MainView.swift in Sources */,
+				E3E3727429687B280008EF08 /* DecisionMakerView.swift in Sources */,
 				E3E3725B296729150008EF08 /* ShuffleBot.xcdatamodeld in Sources */,
 				E3E37251296729140008EF08 /* ContentView.swift in Sources */,
 				E3E3726529679D270008EF08 /* HomeView.swift in Sources */,
+				E3E3727229687B1D0008EF08 /* FlipCoinView.swift in Sources */,
+				E3E3727029687B0D0008EF08 /* YankeeSwapView.swift in Sources */,
 				E3E3724F296729140008EF08 /* ShuffleBotApp.swift in Sources */,
+				E3E3726E29687B010008EF08 /* TeamPickerView.swift in Sources */,
 				E3E372682967A4050008EF08 /* ShuffleBotModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

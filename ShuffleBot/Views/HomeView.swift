@@ -10,14 +10,14 @@ import SwiftUI
 struct HomeView: View {
     
     private let games: [ShuffleGame] = [
-        ShuffleGame(name: "Name Picker", imageName: "person.text.rectangle"),
-        ShuffleGame(name: "Team Picker", imageName: "person.3.fill"),
+        ShuffleGame(name: "Shuffle Names", imageName: "person.text.rectangle"),
+        ShuffleGame(name: "Shuffle Teams", imageName: "person.3.fill"),
         ShuffleGame(name: "Yankee Swap", imageName: "rectangle.2.swap"),
         ShuffleGame(name: "Flip A Coin", imageName: "centsign.square.fill"),
         ShuffleGame(name: "Decision Maker", imageName: "person.fill.questionmark"),
         ShuffleGame(name: "Roll Die", imageName: "dice.fill")
     ]
-    private let adaptiveColumns = [ GridItem(.adaptive(minimum: 170)) ]
+    private let adaptiveColumns = [ GridItem(.adaptive(minimum: 140)) ]
     
     var body: some View {
         NavigationStack {
@@ -27,23 +27,35 @@ struct HomeView: View {
                 
                 ScrollView {
                     VStack {
-                        HStack() {
-                            Text("Shuffle Bot")
-                                .font(.largeTitle)
-                                .fontWeight(.black)
-                                .foregroundColor(.white)
-                            
-                            Spacer()
-                        }.padding()
+                        TitleBar()
                         
                         LazyVGrid(columns: adaptiveColumns, spacing: 20) {
                             ForEach(games, id:\.self) { game in
-                                ItemView(title: game.name, imageName: game.imageName)
+                                NavigationLink(value: game) {
+                                    ItemView(title: game.name, imageName: game.imageName)
+                                }.buttonStyle(PlainButtonStyle())
                             }
+                          
                         }
-                        
                         Spacer()
-                        
+                    }
+                }
+                .navigationDestination(for: ShuffleGame.self) { game in
+                    switch game.name {
+                    case "Shuffle Names":
+                        NamePickerView()
+                    case "Shuffle Teams":
+                        TeamPickerView()
+                    case "Yankee Swap":
+                        YankeeSwapView()
+                    case "Flip A Coin":
+                        FlipCoinView()
+                    case "Decision Maker":
+                        DecisionMakerView()
+                    case "Roll Die":
+                        RollDiceView()
+                    default:
+                        Text("Hello Sailor!")
                     }
                 }
             }
@@ -73,6 +85,22 @@ struct HomeView: View {
                 
 
         }
+    }
+    
+    @ViewBuilder
+    func TitleBar() -> some View {
+        HStack() {
+            Text("Shuffle Bot")
+                .font(.largeTitle)
+                .fontWeight(.black)
+                .foregroundColor(.white)
+            
+            Spacer()
+            
+            Text("🤖")
+                .font(.largeTitle)
+            
+        }.padding()
     }
 }
 
