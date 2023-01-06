@@ -13,6 +13,9 @@
 		E3E37256296729150008EF08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E37255296729150008EF08 /* Preview Assets.xcassets */; };
 		E3E37258296729150008EF08 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E37257296729150008EF08 /* Persistence.swift */; };
 		E3E3725B296729150008EF08 /* ShuffleBot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3E37259296729150008EF08 /* ShuffleBot.xcdatamodeld */; };
+		E3E3726529679D270008EF08 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E3726429679D270008EF08 /* HomeView.swift */; };
+		E3E372682967A4050008EF08 /* ShuffleBotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E372672967A4050008EF08 /* ShuffleBotModel.swift */; };
+		E3E3726A2967A56D0008EF08 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E372692967A56D0008EF08 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		E3E37255296729150008EF08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E3E37257296729150008EF08 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		E3E3725A296729150008EF08 /* ShuffleBot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShuffleBot.xcdatamodel; sourceTree = "<group>"; };
+		E3E3726429679D270008EF08 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E3E372672967A4050008EF08 /* ShuffleBotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleBotModel.swift; sourceTree = "<group>"; };
+		E3E372692967A56D0008EF08 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,11 @@
 		E3E3724D296729140008EF08 /* ShuffleBot */ = {
 			isa = PBXGroup;
 			children = (
-				E3E3724E296729140008EF08 /* ShuffleBotApp.swift */,
-				E3E37250296729140008EF08 /* ContentView.swift */,
+				E3E372662967A3EF0008EF08 /* Model */,
+				E3E3726329679D090008EF08 /* Base */,
+				E3E3726229679CFD0008EF08 /* ViewModels */,
+				E3E3726129679CF10008EF08 /* Views */,
 				E3E37252296729150008EF08 /* Assets.xcassets */,
-				E3E37257296729150008EF08 /* Persistence.swift */,
-				E3E37259296729150008EF08 /* ShuffleBot.xcdatamodeld */,
 				E3E37254296729150008EF08 /* Preview Content */,
 			);
 			path = ShuffleBot;
@@ -71,6 +77,41 @@
 				E3E37255296729150008EF08 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E3E3726129679CF10008EF08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E3E37250296729140008EF08 /* ContentView.swift */,
+				E3E372692967A56D0008EF08 /* MainView.swift */,
+				E3E3726429679D270008EF08 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E3E3726229679CFD0008EF08 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E3E3726329679D090008EF08 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E3E3724E296729140008EF08 /* ShuffleBotApp.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E3E372662967A3EF0008EF08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3E37257296729150008EF08 /* Persistence.swift */,
+				E3E372672967A4050008EF08 /* ShuffleBotModel.swift */,
+				E3E37259296729150008EF08 /* ShuffleBot.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3E37258296729150008EF08 /* Persistence.swift in Sources */,
+				E3E3726A2967A56D0008EF08 /* MainView.swift in Sources */,
 				E3E3725B296729150008EF08 /* ShuffleBot.xcdatamodeld in Sources */,
 				E3E37251296729140008EF08 /* ContentView.swift in Sources */,
+				E3E3726529679D270008EF08 /* HomeView.swift in Sources */,
 				E3E3724F296729140008EF08 /* ShuffleBotApp.swift in Sources */,
+				E3E372682967A4050008EF08 /* ShuffleBotModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
